@@ -1,0 +1,36 @@
+h2{
+    color: blue;
+}
+.selectorClass {
+    color: green;
+}
+#button {
+    background-color: palegreen;
+    border-radius: 10px;
+    width: 20em;
+    height: 3em;
+}
+ul li {
+    color: darkgoldenrod;
+}
+
+div > span {
+    text-decoration: underline;
+}
+p + span {
+    text-decoration: overline ;
+    color: red ;
+}
+p ~ a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+.box1, .box2, .box3 {
+    background-color: saddlebrown;
+    margin: 2em;
+    padding: 1em;
+    width: 200px;
+    text-align: center;
+}

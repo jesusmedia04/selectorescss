@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion05</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>SELECTORES EN CSS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Selector etiqueta</h2>
+            <p>Selecciona todos los elementos HTML que coinciden con una etiqueta específica. <br> Por ejemplo, con h2 colocaremos de color azul todos los encabezados h2 en el documento.</p>
+        </section>
+        <section>
+            <h2>Selector de Clase</h2>
+            <p>Selecciona elementos HTML que tienen una clase específica asignada. Se utiliza precediendo el nombre de la clase con un punto.. <br> Por ejemplo, .selectorClass para personalizar la etique span.</p>
+            <span class="selectorClass">Dando estilo a la etiqueta span con el selector Class</span>
+        </section>
+        <section>
+            <h2>Selector de ID</h2>
+            <p>Selecciona un elemento HTML con un ID específico. Se utiliza precediendo el nombre del ID con un signo de numeral (#). <br> Por ejemplo, #button seleccionaría el elemento con el ID "button".</p>
+            <button id="button">Soy un boton con el selector ID</button>
+        </section>
+        <section>
+            <h2>Selectores Descendientes</h2>
+            <p>Selecciona elementos anidados dentro de otros elementos. Se utiliza un espacio para indicar la relación. <br>Por ejemplo, ul li seleccionaría todos los elementos li que están dentro de una lista desordenada ul.</p>
+            <ul>
+                <li>Hijo 1</li>
+                <li>Hijo 2</li>
+                <li>Hijo 3</li>
+                <li>Hijo 4</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Selector Hijo Directo</h2>
+            <p>Selecciona elementos que son hijos directos de otro elemento. Se utiliza el signo mayor que (>) <br> Por ejemplo, div > span seleccionaría todos los span que son hijos directos de la etiqueta div.</p>
+            <div>
+                <span>span 1</span>
+                <span>span 2</span>
+                <span>span 3</span>
+                <span>span 4</span>
+            </div>
+        </section>
+        <section>
+            <h2>Selector Hermano siguiente o adyacente</h2>
+            <p>Selecciona un elemento que es un hermano inmediato del elemento especificado. Se utiliza el signo de suma (+). <br> Por ejemplo, p + span seleccionaria un span que sigue inmediatamente a un parrafo.</p>
+            <p>primer elemento</p>
+            <span>elemento al que se le dara estilo</span>
+        </section>
+        <section>
+            <h2>Selector Hermanos siguientes o adyacentes</h2>
+            <p>Selecciona todos los elementos hermanos inmediatos que siguen al elemento especificado. Se utiliza el signo (~).<br> Por ejemplo, p ~ a seleccionaría todos los enlaces que siguen a los parrafos.</p>
+            <p>Soy el parrafo</p>
+            <a href="#">Enlace 1</a>
+            <a href="#">Enlace 2</a>
+            <a href="#">Enlace 3</a>
+            <a href="#">Enlace 4</a>
+            <div>
+                <a href="#">Enlace que no recibe estilo</a>
+            </div>
+        </section>
+        <section>
+            <h2>Anidamiento de selectores</h2>
+            <p>Permite combinar múltiples selectores para aplicar estilos a elementos que cumplen con cualquiera de los selectores combinados. Se utiliza una coma para separar los selectores. <br> Por ejemplo, .box1, .box2, .box3 seleccionaría dichos divs en el documento.</p>
+            <div class="box1">Caja 1</div>
+            <div class="box2">Caja 2</div>
+            <div class="box3">Caja 3</div>
+        </section>
+    </main>
+</body>
+</html>
